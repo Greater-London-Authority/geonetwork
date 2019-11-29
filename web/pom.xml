@@ -521,6 +521,11 @@
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
+      <artifactId>schema-iso19139.gemini23</artifactId>
+      <version>${gn.schemas.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
       <artifactId>schema-iso19110</artifactId>
       <version>${gn.schemas.version}</version>
     </dependency>
@@ -771,6 +776,11 @@
                 <resource>
                   <directory>${project.basedir}/../docs/manuals/target/doc</directory>
                   <targetPath>${basedir}/src/main/webapp/doc</targetPath>
+                </resource>
+                <resource>
+                  <directory>${project.basedir}/../schemas/iso19139.gemini23/src/main/plugin</directory>
+                  <targetPath>${basedir}/src/main/webapp/WEB-INF/data/config/schema_plugins
+                  </targetPath>
                 </resource>
               </resources>
             </configuration>
